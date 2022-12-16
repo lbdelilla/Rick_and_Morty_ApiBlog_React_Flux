@@ -1,0 +1,30 @@
+
+.gitHub{
+    text-decoration: none;
+    color: #f0e5c7;
+    background:
+    linear-gradient(
+      to right,
+      #99dbd9,
+      #99dbd9
+    ),
+    linear-gradient(
+      to right,
+      #3e8baa,
+      rgba(253, 255, 114),
+      rgb(161, 114, 255)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  }
+  .gitHub:hover {
+    background-size: 0 3px, 100% 3px;
+    
+  }
+
+  .madeBy{
+    font-family: 'Nerko One', cursive;
+    color: #e4a788
+  }
