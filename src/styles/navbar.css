@@ -1,4 +1,27 @@
 
 .navbar{
-    background-color: aqua;
+    background-image: linear-gradient(#000000, #272822);
 }
+
+.logo{
+    margin: 10px;
+    width: 30px;
+}
+
+.logo-text {
+    color: white;
+    font-family: 'Gaegu', cursive;
+    font-size: 25px;
+}
+
+.navbar>.container-fluid{
+    justify-content: left;
+    display: flex;
+}
+
+span.nav-item{
+    text-decoration: none;
+    color: white;
+
+} 
+

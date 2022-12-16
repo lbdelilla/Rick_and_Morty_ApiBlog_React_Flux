@@ -1,16 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "/workspace/_Blog_ReadingList/src/img/rickymorty.png"
+import "../../styles/navbar.css";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
-			<Link to="/">
-				<span className="navbar-brand mb-0 h1">Home</span>
-			</Link>
-			<div className="ml-auto">
-				<Link to="/people">
-					<button className="btn btn-primary">Characters</button>
-				</Link>
+		<nav className="navbar mb-3">
+			<div className="d-flex container-fluid">
+				<div className="p-2 flex-fill">
+					<img className="logo" src={Logo} alt="Rick and Morty Logo"/>	
+					<span className="logo-text">Rick and Morty</span>	
+				</div>
+					<div className="navbarItems">
+						<Link to="/">
+							<span className="nav-item">Home</span>
+						</Link>
+						&nbsp;
+						<Link to="/people">
+							<span className="nav-item">Characters</span>
+						</Link>
+						
+					</div>
 			</div>
 		</nav>
 	);

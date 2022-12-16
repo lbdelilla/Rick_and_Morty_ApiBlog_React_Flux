@@ -1,6 +1,6 @@
 body
 {
-  background-color:#2E8934;
+  background-color:#272822;
 }
 
 h5
@@ -39,10 +39,8 @@ p
   transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   border-radius:16px;
   overflow:hidden;
-  box-shadow:  15px 15px 27px #1c6120, -15px -15px 27px #1c6120;
+  box-shadow:  5px 5px 27px #010902, -5px -5px 27px #010902;
 }
-
-/* Bottom Card Section */
 
 .property-description
 {
@@ -56,7 +54,6 @@ p
   text-align:center;
 }
 
-/* Social Icons */
 
 .property-social-icons
 {
@@ -68,9 +65,6 @@ p
 .fa-heart {
     color:#44281D
 }
-/* Property Cards Hover States */
-
-
 
 .fa-heart:hover
 {
@@ -91,6 +85,5 @@ p
 
 .property-card:hover 
 {
-  background-color:blue;
   cursor:pointer;
 }
