@@ -1,10 +1,13 @@
 import React from "react"
 import "../../styles/demo.css";
-
+import { Navigation } from "./Navigation.jsx";
 
  const CharactersCard = ({characters = []}) => {
     return (
         <div className="row">
+            <div>
+                <Navigation/>
+            </div>
             { characters.map((char, index) => {
 				return (
 				 <div key={index} className="col">

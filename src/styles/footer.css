@@ -1,12 +1,14 @@
 
-.gitHub{
+
+
+a{
     text-decoration: none;
-    color: #f0e5c7;
+    color: white;
     background:
     linear-gradient(
       to right,
-      #99dbd9,
-      #99dbd9
+      #272822
+      #272822
     ),
     linear-gradient(
       to right,
@@ -19,12 +21,13 @@
   background-repeat: no-repeat;
   transition: background-size 400ms;
   }
-  .gitHub:hover {
+  a:hover {
     background-size: 0 3px, 100% 3px;
     
   }
 
   .madeBy{
-    font-family: 'Nerko One', cursive;
-    color: #e4a788
+    font-family:  'Gaegu', cursive;
+    color: white
+
   }

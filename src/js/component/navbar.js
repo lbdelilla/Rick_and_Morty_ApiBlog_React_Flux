@@ -15,9 +15,13 @@ export const Navbar = () => {
 						<Link to="/">
 							<span className="nav-item">Home</span>
 						</Link>
-						&nbsp;
-						<Link to="/people">
+						&nbsp;&nbsp;
+						<Link to="/characters">
 							<span className="nav-item">Characters</span>
+						</Link>
+						&nbsp;&nbsp;
+						<Link to="/locations">
+							<span className="nav-item">Locations</span>
 						</Link>
 						
 					</div>

@@ -33,16 +33,7 @@ const injectContext = PassedComponent => {
 			 *
 			 **/
 		}, []);
-
-		// const [data, setData] = useState("")
-
-		// const getInfo = async () => {
-		// 	await fetch("https://www.swapi.tech/api/planets/1/")
-		// 	.then(res => res.json())
-		// 	.then(data => console.log(data))
-		// 	.catch(err => console.error(err))
-		// }
-
+	
 
 
 		// The initial value for the context is not null anymore, but the current state of this component,

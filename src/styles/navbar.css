@@ -1,4 +1,4 @@
-
+/*Navbar styles*/
 .navbar{
     background-image: linear-gradient(#000000, #272822);
 }
@@ -25,3 +25,14 @@ span.nav-item{
 
 } 
 
+/*Navigation buttons styles*/
+
+.page-link {
+    color: white;
+    font-family: 'Gaegu', cursive;
+    border-style:ridge;
+}
+
+.page-link:hover{
+    color: rgb(147, 179, 66);
+}
