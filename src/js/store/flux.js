@@ -1,7 +1,9 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			characters: []
+			selectCharacter: [],
+			characters: [],
+			favorites: []
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -13,20 +15,18 @@ const getState = ({ getStore, getActions, setStore }) => {
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/
 			},
-			changeColor: (index, color) => {
-				//get the store
-				const store = getStore();
+			// getCharacter: (character) => { setStore({ selectCharacter: character, }); },
+			getCharacters: async () => {
+              
+                    const response = await fetch(`https://rickandmortyapi.com/api/character`, {
+                        method: "GET",
+                    
+                    });
+                    const responseJSON = await response.json();
 
-				//we have to loop the entire demo array to look for the respective index
-				//and change its color
-				const demo = store.demo.map((elm, i) => {
-					if (i === index) elm.background = color;
-					return elm;
-				});
+                    setStore({ characters: responseJSON.results });
 
-				//reset the global store
-				setStore({ demo: demo });
-			}
+            },
 		}
 	};
 };
