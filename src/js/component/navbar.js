@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "/workspace/_Blog_ReadingList/src/img/rickymorty.png"
+import Logo from "../../img/rickymorty.png"
 import "../../styles/navbar.css";
 
 export const Navbar = () => {

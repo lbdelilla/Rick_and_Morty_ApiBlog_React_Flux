@@ -8,6 +8,7 @@ h5
     font-family: 'Gaegu', cursive;
     font-size: 28px;
     color: #44281D ;
+    padding-top: 32px;
 }
 
 p
@@ -22,7 +23,7 @@ p
 {
   height: 55vh;
   width: 100%;
-  display: flex;
+  
   justify-content: center;
   align-items: center;
 }
@@ -40,6 +41,10 @@ p
   border-radius:16px;
   overflow:hidden;
   box-shadow:  5px 5px 27px #010902, -5px -5px 27px #010902;
+  display: flex;
+  padding: 0px;
+  margin-bottom: 25px;
+  
 }
 
 .property-description
@@ -60,6 +65,17 @@ p
   position:absolute;
   bottom:1em;
   left:1em;
+}
+
+.btn{
+  position:absolute;
+  bottom:0.6em;
+  left:2em;
+  font-family: 'Gaegu', cursive;
+  font-size: 18px;
+  color: #44281D ;
+  padding: 1px;
+  margin-left: 5px;
 }
 
 .fa-heart {
@@ -86,4 +102,9 @@ p
 .property-card:hover 
 {
   cursor:pointer;
+}
+
+.page-title{
+  font-family: 'Gaegu', cursive;
+  font-size: 35px;
 }

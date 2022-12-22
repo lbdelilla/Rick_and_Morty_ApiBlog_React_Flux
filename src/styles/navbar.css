@@ -46,3 +46,7 @@ span.nav-item{
 .navbarItems{
     align-items: flex-end;
 }
+
+.pagination {
+    margin: 30px;
+}

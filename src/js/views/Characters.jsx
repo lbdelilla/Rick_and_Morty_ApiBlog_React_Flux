@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
-
+import "../../styles/demo.css";
 
 // Custom Componet que muestra las Cards de los planetas
 import { CharactersCard } from "./CharactersCard.jsx";
@@ -15,14 +15,14 @@ export const Characters = () => {
     // const selectPlanet = store.selectPlanet;
 	console.log(characters);
 	return (
-		<div className="container bg-dark">
-            <h1 className="text-light text-center pt-4">Characters</h1>
+		<div className="container">
+            <h1 className="page-title text-light text-center">Characters</h1>
             <div>
                 <Navigation/>
             </div>
-			<div className="row row-cols-1 row-cols-md-3 g-4">
+			<div className="row justify-content-around">
 				{   characters.map((e)=>{
-                       return <CharactersCard key={e.id} image={e.image} name={e.name} status={e.status} species={e.species} gender={e.gender}/>
+                       return <CharactersCard key={e.id} image={e.image} name={e.name} status={e.status} species={e.species} gender={e.gender} id={e.id} type={e.type} origin={e.origin.name} oriURL={e.origin.url} location={e.location.name} locURL={e.location.url}/>
                         
                     })
                 }

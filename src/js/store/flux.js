@@ -3,28 +3,22 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			selectCharacter: [],
 			characters: [],
-			favorites: []
+			favorites: [],
+			//characterInfo:{}
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
-			exampleFunction: () => {
-				getActions().changeColor(0, "green");
-			},
-			loadSomeData: () => {
-				/**
-					fetch().then().then(data => setStore({ "foo": data.bar }))
-				*/
-			},
-			// getCharacter: (character) => { setStore({ selectCharacter: character, }); },
+
+			//getCharacter: (character) => {setStore({selectCharacter: character,});},
 			getCharacters: async () => {
               
                     const response = await fetch(`https://rickandmortyapi.com/api/character`, {
                         method: "GET",
                     
                     });
-                    const responseJSON = await response.json();
+                    const data = await response.json();
 
-                    setStore({ characters: responseJSON.results });
+                    setStore({ characters: data.results });
 
             },
 		}
