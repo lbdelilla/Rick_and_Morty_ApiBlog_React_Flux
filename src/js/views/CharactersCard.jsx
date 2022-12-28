@@ -2,18 +2,16 @@ import React, { useState, useContext } from "react";
 import "../../styles/demo.css";
 
 import { Link } from "react-router-dom";
-import { Context } from "../store/appContext";
+//import { Context } from "../store/appContext";
 
 export const CharactersCard = ({
   id,
   image,
   name,
-  species,
   status,
   gender,
-  origin,
 }) => {
-  const { store, actions } = useContext(Context);
+  //const { store, actions } = useContext(Context);
 
   return (
     <div className="property-card">
@@ -31,17 +29,7 @@ export const CharactersCard = ({
       </Link>
       <Link to={`/characters/${id}`} className="detail-icons">
         <button
-          className="btn btn-light"
-          onClick={() =>
-            actions.getCharacter({
-              id: id,
-              name: name,
-              status: status,
-              gender: gender,
-              origin: origin,
-              species: species
-            })
-          }
+          className="btn btn-dark"
         >
           Details
         </button>

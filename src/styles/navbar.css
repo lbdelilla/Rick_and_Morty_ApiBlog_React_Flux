@@ -41,6 +41,7 @@ span.nav-item{
 .nav-item{
     font-family: 'Gaegu', cursive;
     font-size: 20px;
+    border-radius: 5px;
 }
 
 .navbarItems{
@@ -49,4 +50,16 @@ span.nav-item{
 
 .pagination {
     margin: 30px;
+}
+
+.dropdown{
+    display: inline-block;
+}
+
+.dropdown-menu{
+    padding: 0px;
+}
+
+.dropdown-item{
+    padding-left: 5px;
 }

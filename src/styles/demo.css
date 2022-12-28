@@ -73,7 +73,7 @@ p
   left:2em;
   font-family: 'Gaegu', cursive;
   font-size: 18px;
-  color: #44281D ;
+  color: #ffffff ;
   padding: 1px;
   margin-left: 5px;
 }
@@ -107,4 +107,23 @@ p
 .page-title{
   font-family: 'Gaegu', cursive;
   font-size: 35px;
+}
+
+.card{
+  max-width: 70%;
+  margin-left: 15%;
+  margin-top: 8%;
+}
+
+.col-md-4, .card-body, .col-md-8{
+  background-color: #dacd44;
+}
+
+.detail-card-title{
+  font-size: 35px;
+}
+
+.detail-card-text{
+  font-size: 28px;
+  font-family: 'Gaegu', cursive;
 }
