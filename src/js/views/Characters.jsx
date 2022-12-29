@@ -10,10 +10,10 @@ import { Navigation } from "../component/Navigation.jsx";
 
 export const Characters = () => {
 	const { store, actions } = useContext(Context);
-	// Traemos los planets del store
+	
 	const characters = store.characters;
-    // const selectPlanet = store.selectPlanet;
-	console.log(characters);
+    
+	
 	return (
 		<div className="container">
             <h1 className="page-title text-light text-center">Characters</h1>
@@ -27,6 +27,9 @@ export const Characters = () => {
                     })
                 }
 			</div>
+			<div>
+                <Navigation/>
+            </div>
 		</div>
 	);
 };

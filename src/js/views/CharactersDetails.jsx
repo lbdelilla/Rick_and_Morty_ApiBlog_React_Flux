@@ -8,8 +8,6 @@ export function CharactersDetails() {
   //const characterInfo = store.characterInfo;
   const [characterInfo, setCharacterInfo] = useState({});
 
-  //const type = characterInfo.type == "" ? "Unknown" : characterInfo.type;
-
   const { theid } = useParams();
 
   const getCharacterInfo = (id, setCharacterInfo) => {
@@ -20,9 +18,8 @@ export function CharactersDetails() {
 
   useEffect(() => {
     getCharacterInfo(theid, setCharacterInfo);
-  }, []);
+  }, [theid]);
 
-  console.log(characterInfo);
 
   return (
     

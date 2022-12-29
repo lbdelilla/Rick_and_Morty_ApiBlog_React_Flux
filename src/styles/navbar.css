@@ -31,10 +31,11 @@ span.nav-item{
     color: white;
     font-family: 'Gaegu', cursive;
     border-style:ridge;
+    cursor: pointer;
 }
 
 .page-link:hover{
-    color: rgb(147, 179, 66);
+    color: #dacd44;
 }
 
 
@@ -61,5 +62,16 @@ span.nav-item{
 }
 
 .dropdown-item{
-    padding-left: 5px;
+    padding:5px;
+}
+
+.fa-solid{
+    margin:3px;
+    cursor: pointer;
+}
+
+span{
+    color:black;
+    font-family: 'Gaegu', cursive;
+    font-size: 20px;
 }

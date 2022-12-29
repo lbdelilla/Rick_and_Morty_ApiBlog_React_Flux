@@ -65,12 +65,16 @@ p
   position:absolute;
   bottom:1em;
   left:1em;
+  border: none;
+  border-radius: 5px;
+  
+
 }
 
 .btn{
   position:absolute;
-  bottom:0.6em;
-  left:2em;
+  bottom: 0.8em;
+  left:3em;
   font-family: 'Gaegu', cursive;
   font-size: 18px;
   color: #ffffff ;
@@ -79,12 +83,12 @@ p
 }
 
 .fa-heart {
-    color:#44281D
+   margin-right: 2px;
 }
 
-.fa-heart:hover
+.fa-heart:hover, .btn:hover
 {
-  color:aqua;
+  color:#dacd44;
   cursor:pointer;
 }
 

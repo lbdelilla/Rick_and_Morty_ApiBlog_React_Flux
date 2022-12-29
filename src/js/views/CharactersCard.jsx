@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import "../../styles/demo.css";
 
 import { Link } from "react-router-dom";
-//import { Context } from "../store/appContext";
+import { Context } from "../store/appContext";
 
 export const CharactersCard = ({
   id,
@@ -11,8 +11,15 @@ export const CharactersCard = ({
   status,
   gender,
 }) => {
-  //const { store, actions } = useContext(Context);
+  const { store, actions } = useContext(Context);
 
+  const handleFavorites = (id, name) => {
+    const obj = [{ id, name}];
+    store.favorites.some((characters) => characters.name === obj[0].name)
+      ? null
+      : actions.setFavorites(obj);
+  };
+  
   return (
     <div className="property-card">
       <div className="property-image">
@@ -24,9 +31,9 @@ export const CharactersCard = ({
           Status : {status} <br /> Gender : {gender}
         </p>
       </div>
-      <Link to="" className="property-social-icons">
+      <button className="property-social-icons btn-dark"  onClick={() => handleFavorites(id, name)}>
         <i className="fa-regular fa-heart"></i>
-      </Link>
+      </button>
       <Link to={`/characters/${id}`} className="detail-icons">
         <button
           className="btn btn-dark"

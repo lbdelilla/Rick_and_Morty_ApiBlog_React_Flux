@@ -3,8 +3,8 @@ const getState = ({ getStore, getActions, setStore }) => {
     store: {
       characters: [],
       favorites: [],
-      info: {},
-	  
+      next: "",
+      prev: "",
     },
     actions: {
       getCharacters: async () => {
@@ -16,11 +16,28 @@ const getState = ({ getStore, getActions, setStore }) => {
         );
         const data = await response.json();
 
-        setStore({ characters: data.results, info: data.info });
+        setStore({ characters: data.results, next: data.info.next });
+      },
+      setCharacters: (data) => {
+        setStore({
+          characters: data.results,
+          next: data.info.next,
+          prev: data.info.prev,
+        })
+      },
+      setFavorites: (data) => {
+        setStore({ favorites: getStore().favorites.concat(data) });
+      console.log(getStore);
       },
 
+      deleteFavorites: (name) => {
+        setStore({
+          favorites: getStore().favorites.filter(
+            (favorites) => favorites.name !== name),
+        })
+      },
     },
-  };
+};
 };
 
 export default getState;

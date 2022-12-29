@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../img/rickymorty.png";
 import "../../styles/navbar.css";
+import { FavoritesList } from "./favorites.jsx";
+import { Context } from "../store/appContext";
+
 
 export const Navbar = () => {
+  const { store } = useContext(Context);
   return (
     <nav className="navbar ">
       <div className="d-flex container-fluid">
@@ -28,13 +32,18 @@ export const Navbar = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
+              <span className="badge rounded-pill bg-dark">
+                {store.favorites.length}
+              </span>
               Favorites
             </button>
-            <ul className="dropdown-menu"  aria-labelledby="dropdownMenuButton1">
+			      <FavoritesList/>
+            <ul
+              className="dropdown-menu dropdown-menu-end"
+              aria-labelledby="dropdownMenuButton1"
+            >
               <li>
-                <a className="dropdown-item">
-                  test
-                </a>
+                <a className="dropdown-item">test</a>
               </li>
             </ul>
           </div>
