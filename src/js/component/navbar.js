@@ -1,10 +1,9 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../img/rickymorty.png";
 import "../../styles/navbar.css";
 import { FavoritesList } from "./favorites.jsx";
 import { Context } from "../store/appContext";
-
 
 export const Navbar = () => {
   const { store } = useContext(Context);
@@ -37,7 +36,7 @@ export const Navbar = () => {
               </span>
               Favorites
             </button>
-			      <FavoritesList/>
+            <FavoritesList />
             <ul
               className="dropdown-menu dropdown-menu-end"
               aria-labelledby="dropdownMenuButton1"

@@ -25,6 +25,19 @@ span.nav-item{
 
 } 
 
+
+.dropdown{
+    display: inline-block;
+}
+
+.dropdown-menu{
+    padding: 0px;
+}
+
+.dropdown-item{
+    padding:5px;
+}
+
 /*Navigation buttons styles*/
 
 .page-link {
@@ -53,17 +66,6 @@ span.nav-item{
     margin: 30px;
 }
 
-.dropdown{
-    display: inline-block;
-}
-
-.dropdown-menu{
-    padding: 0px;
-}
-
-.dropdown-item{
-    padding:5px;
-}
 
 .fa-solid{
     margin:3px;

@@ -7,7 +7,6 @@ export const FavoritesList = () => {
   const { store, actions } = useContext(Context);
 
   const favorites = store.favorites;
-  
 
   const handleDelete = (name, id) => {
     actions.deleteFavorites(name, id);
@@ -30,7 +29,7 @@ export const FavoritesList = () => {
           >
             <span>{favorites.name}</span>
           </Link>
-          
+
           <i
             className="fa-solid fa-trash"
             onClick={() => handleDelete(favorites.name, favorites.id)}
